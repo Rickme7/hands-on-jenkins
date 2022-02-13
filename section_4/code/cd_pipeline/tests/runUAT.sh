@@ -14,6 +14,7 @@ if [ $status_code == 200 ];
 then
 	echo "PASS: ${hostname}:${port} is reachable"
 else
+	echo "status_code: $status_code"
 	echo "FAIL: ${hostname}:${port} is unreachable"
     exit 1
 fi
